@@ -7,8 +7,9 @@ public class Main {
         Vehiculos datos4 = new Vehiculos();
         Vehiculos datos5 = new Vehiculos();
         Vehiculos menu_de_opciones = new Vehiculos();
-
-        while (menu_de_opciones.menu() != 3) {
+        int opciones = 0;
+        boolean salir = false;
+        while (!salir) {
             switch (menu_de_opciones.menu()) {
                 case 1:
                     System.out.println("");
@@ -41,7 +42,17 @@ public class Main {
                     System.out.println("-----------------------------------");
                     datos.impresion(datos1, datos2, datos3, datos4, datos5);
                     break;
+                case 3:
+                    salir = true;
+                    break;
+                default:
+                    System.out.println("-------------------");
+                    System.out.println("| OPCION NO VALIDA|");
+                    System.out.println("-------------------");
             }
         }
+        System.out.println("-------------------------");
+        System.out.println("| GRACIAS VUELVA PRONTO |");
+        System.out.println("-------------------------");
     }
 }

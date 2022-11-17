@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Vehiculos {
 
     // ATRIBUTOS
@@ -21,21 +20,27 @@ public class Vehiculos {
         kilometraje = "";
         anio_fabricacion = 0;
     }
-    //menu
-    int menu()
-    {
+    //Menu de opciones
+    int menu() {
         int op = -1;
-        while ((op < 0) || ( op > 3))
-        {
-            System.out.println(" BIENVENIDO AL REGISTRO DE VEHICULOS ");
-            System.out.println("1.- Registrar vehiculos");
-            System.out.println("2.- Ver los vehiculos registrados");
-            System.out.println("3.- Salir");
-            System.out.println("Ingrese la opcion que desea ejecutar: ");
+        while ((op < 0) || ( op > 3)) {
+            System.out.println("---------------------------------------");
+            System.out.println("| BIENVENIDO AL REGISTRO DE VEHICULOS |");
+            System.out.println("---------------------------------------");
+            System.out.println("---------------------------------------------");
+            System.out.println("|     1.- Registrar vehiculos               |");
+            System.out.println("|                                           |");
+            System.out.println("|     2.- Ver los vehiculos registrados     |");
+            System.out.println("|                                           |");
+            System.out.println("|     3.- Salir                             |");
+            System.out.println("---------------------------------------------");
+            System.out.print("Ingrese la opcion que desea ejecutar: ");
             op = entrada.nextInt();
 
             if ((op < 0) || (op > 3)){
-                System.out.println("Opcion no valida");
+                System.out.println("--------------------");
+                System.out.println("| Opcion no valida |");
+                System.out.println("--------------------");
             }
         }
         return op;
@@ -43,77 +48,76 @@ public class Vehiculos {
     //METODOS
 
     public void car1 (Vehiculos datos1){
-        System.out.println("Ingrese la marca del vehiculo: ");
+        System.out.print("Ingrese la marca del vehiculo: ");
         datos1.setMarca(entrada.nextLine());
-        System.out.println("Ingrese el modelo del vehiculo: ");
+        System.out.print("Ingrese el modelo del vehiculo: ");
         datos1.setModelo(entrada.nextLine());
-        System.out.println("Ingrese la placa del vehiculo: ");
+        System.out.print("Ingrese la placa del vehiculo: ");
         datos1.setPlaca(entrada.nextLine());
-        System.out.println("Ingrese el color del vehiculo: ");
+        System.out.print("Ingrese el color del vehiculo: ");
         datos1.setColor(entrada.nextLine());
-        System.out.println("Ingrese el kilometraje del vehiculo: ");
+        System.out.print("Ingrese el kilometraje del vehiculo: ");
         datos1.setKilometraje(entrada.nextLine());
-        System.out.println("Ingrese el año de fabricacion del vehiculo: ");
+        System.out.print("Ingrese el año de fabricacion del vehiculo: ");
         datos1.setAnio_fabricacion(entrada.nextInt());
     }
 
     public void car2 (Vehiculos datos2){
-        System.out.println("Ingrese la marca del vehiculo: ");
+        System.out.print("Ingrese la marca del vehiculo: ");
         datos2.setMarca(entrada.nextLine());
-        System.out.println("Ingrese el modelo del vehiculo: ");
+        System.out.print("Ingrese el modelo del vehiculo: ");
         datos2.setModelo(entrada.nextLine());
-        System.out.println("Ingrese la placa del vehiculo: ");
+        System.out.print("Ingrese la placa del vehiculo: ");
         datos2.setPlaca(entrada.nextLine());
-        System.out.println("Ingrese el color del vehiculo: ");
+        System.out.print("Ingrese el color del vehiculo: ");
         datos2.setColor(entrada.nextLine());
-        System.out.println("Ingrese el kilometraje del vehiculo: ");
+        System.out.print("Ingrese el kilometraje del vehiculo: ");
         datos2.setKilometraje(entrada.nextLine());
-        System.out.println("Ingrese el año de fabricacion del vehiculo: ");
+        System.out.print("Ingrese el año de fabricacion del vehiculo: ");
         datos2.setAnio_fabricacion(entrada.nextInt());
-
     }
 
     public void car3 (Vehiculos datos3){
-        System.out.println("Ingrese la marca del vehiculo: ");
+        System.out.print("Ingrese la marca del vehiculo: ");
         datos3.setMarca(entrada.nextLine());
-        System.out.println("Ingrese el modelo del vehiculo: ");
+        System.out.print("Ingrese el modelo del vehiculo: ");
         datos3.setModelo(entrada.nextLine());
-        System.out.println("Ingrese la placa del vehiculo: ");
+        System.out.print("Ingrese la placa del vehiculo: ");
         datos3.setPlaca(entrada.nextLine());
-        System.out.println("Ingrese el color del vehiculo: ");
+        System.out.print("Ingrese el color del vehiculo: ");
         datos3.setColor(entrada.nextLine());
-        System.out.println("Ingrese el kilometraje del vehiculo: ");
+        System.out.print("Ingrese el kilometraje del vehiculo: ");
         datos3.setKilometraje(entrada.nextLine());
-        System.out.println("Ingrese el año de fabricacion del vehiculo: ");
+        System.out.print("Ingrese el año de fabricacion del vehiculo: ");
         datos3.setAnio_fabricacion(entrada.nextInt());
     }
 
     public void car4 (Vehiculos datos4){
-        System.out.println("Ingrese la marca del vehiculo: ");
+        System.out.print("Ingrese la marca del vehiculo: ");
         datos4.setMarca(entrada.nextLine());
-        System.out.println("Ingrese el modelo del vehiculo: ");
+        System.out.print("Ingrese el modelo del vehiculo: ");
         datos4.setModelo(entrada.nextLine());
-        System.out.println("Ingrese la placa del vehiculo: ");
+        System.out.print("Ingrese la placa del vehiculo: ");
         datos4.setPlaca(entrada.nextLine());
-        System.out.println("Ingrese el color del vehiculo: ");
+        System.out.print("Ingrese el color del vehiculo: ");
         datos4.setColor(entrada.nextLine());
-        System.out.println("Ingrese el kilometraje del vehiculo: ");
+        System.out.print("Ingrese el kilometraje del vehiculo: ");
         datos4.setKilometraje(entrada.nextLine());
-        System.out.println("Ingrese el año de fabricacion del vehiculo: ");
+        System.out.print("Ingrese el año de fabricacion del vehiculo: ");
         datos4.setAnio_fabricacion(entrada.nextInt());
     }
     public void car5 (Vehiculos datos5){
-        System.out.println("Ingrese la marca del vehiculo: ");
+        System.out.print("Ingrese la marca del vehiculo: ");
         datos5.setMarca(entrada.nextLine());
-        System.out.println("Ingrese el modelo del vehiculo: ");
+        System.out.print("Ingrese el modelo del vehiculo: ");
         datos5.setModelo(entrada.nextLine());
-        System.out.println("Ingrese la placa del vehiculo: ");
+        System.out.print("Ingrese la placa del vehiculo: ");
         datos5.setPlaca(entrada.nextLine());
-        System.out.println("Ingrese el color del vehiculo: ");
+        System.out.print("Ingrese el color del vehiculo: ");
         datos5.setColor(entrada.nextLine());
-        System.out.println("Ingrese el kilometraje del vehiculo: ");
+        System.out.print("Ingrese el kilometraje del vehiculo: ");
         datos5.setKilometraje(entrada.nextLine());
-        System.out.println("Ingrese el año de fabricacion del vehiculo: ");
+        System.out.print("Ingrese el año de fabricacion del vehiculo: ");
         datos5.setAnio_fabricacion(entrada.nextInt());
     }
 
