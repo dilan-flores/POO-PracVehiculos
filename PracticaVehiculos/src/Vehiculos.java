@@ -21,7 +21,25 @@ public class Vehiculos {
         kilometraje = "";
         anio_fabricacion = 0;
     }
+    //menu
+    int menu()
+    {
+        int op = -1;
+        while ((op < 0) || ( op > 3))
+        {
+            System.out.println(" BIENVENIDO AL REGISTRO DE VEHICULOS ");
+            System.out.println("1.- Registrar vehiculos");
+            System.out.println("2.- Ver los vehiculos registrados");
+            System.out.println("3.- Salir");
+            System.out.println("Ingrese la opcion que desea ejecutar: ");
+            op = entrada.nextInt();
 
+            if ((op < 0) || (op > 3)){
+                System.out.println("Opcion no valida");
+            }
+        }
+        return op;
+    }
     //METODOS
 
     public void car1 (Vehiculos datos1){
