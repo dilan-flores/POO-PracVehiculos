@@ -45,6 +45,25 @@ public class Vehiculos {
         }
         return op;
     }
+
+    int menu_registro() {
+        int op = -1;
+        while ((op < 0) || ( op > 5)) {
+            System.out.println("");
+            System.out.println("------------------------------------------");
+            System.out.print("Cantidad de vehiculos a registrar(MAX 5): ");
+            op = entrada.nextInt();
+            System.out.println("------------------------------------------");
+
+            if ((op < 0) || (op > 5)){
+                System.out.println("--------------------");
+                System.out.println("| Opcion no valida |");
+                System.out.println("--------------------");
+            }
+        }
+        return op;
+    }
+
     //METODOS
 
     public void car1 (Vehiculos datos1){
@@ -121,57 +140,62 @@ public class Vehiculos {
         datos5.setAnio_fabricacion(entrada.nextInt());
     }
 
-    public void impresion (Vehiculos datos1, Vehiculos datos2, Vehiculos datos3, Vehiculos datos4, Vehiculos datos5){
-        System.out.println("--------------------------");
-        System.out.println("| Datos del 1er vehiculo |");
-        System.out.println("--------------------------");
-        System.out.println("Marca: " + datos1.getMarca());
-        System.out.println("Modelo: " + datos1.getModelo());
-        System.out.println("Placa: " + datos1.getPlaca());
-        System.out.println("Color: " + datos1.getColor());
-        System.out.println("Kilometraje: " + datos1.getKilometraje());
-        System.out.println("Año de Fabricación: " + datos1.getAnio_fabricacion());
+    public void impresion (Vehiculos datos1, Vehiculos datos2, Vehiculos datos3, Vehiculos datos4, Vehiculos datos5, int op_registro){
 
-        System.out.println("--------------------------");
-        System.out.println("| Datos del 2do vehiculo |");
-        System.out.println("--------------------------");
-        System.out.println("Marca: " + datos2.getMarca());
-        System.out.println("Modelo: " + datos2.getModelo());
-        System.out.println("Placa: " + datos2.getPlaca());
-        System.out.println("Color: " + datos2.getColor());
-        System.out.println("Kilometraje: " + datos2.getKilometraje());
-        System.out.println("Año de Fabricación: " + datos2.getAnio_fabricacion());
-
-        System.out.println("--------------------------");
-        System.out.println("| Datos del 3er vehiculo |");
-        System.out.println("--------------------------");
-        System.out.println("Marca: " + datos3.getMarca());
-        System.out.println("Modelo: " + datos3.getModelo());
-        System.out.println("Placa: " + datos3.getPlaca());
-        System.out.println("Color: " + datos3.getColor());
-        System.out.println("Kilometraje: " + datos3.getKilometraje());
-        System.out.println("Año de Fabricación: " + datos3.getAnio_fabricacion());
-
-        System.out.println("--------------------------");
-        System.out.println("| Datos del 4to vehiculo |");
-        System.out.println("--------------------------");
-        System.out.println("Marca: " + datos4.getMarca());
-        System.out.println("Modelo: " + datos4.getModelo());
-        System.out.println("Placa: " + datos4.getPlaca());
-        System.out.println("Color: " + datos4.getColor());
-        System.out.println("Kilometraje: " + datos4.getKilometraje());
-        System.out.println("Año de Fabricación: " + datos4.getAnio_fabricacion());
-
-        System.out.println("--------------------------");
-        System.out.println("| Datos del 5to vehiculo |");
-        System.out.println("--------------------------");
-        System.out.println("Marca: " + datos5.getMarca());
-        System.out.println("Modelo: " + datos5.getModelo());
-        System.out.println("Placa: " + datos5.getPlaca());
-        System.out.println("Color: " + datos5.getColor());
-        System.out.println("Kilometraje: " + datos5.getKilometraje());
-        System.out.println("Año de Fabricación: " + datos5.getAnio_fabricacion());
+        if(op_registro >= 1) {
+            System.out.println("--------------------------");
+            System.out.println("| Datos del 1er vehiculo |");
+            System.out.println("--------------------------");
+            System.out.println("Marca: " + datos1.getMarca());
+            System.out.println("Modelo: " + datos1.getModelo());
+            System.out.println("Placa: " + datos1.getPlaca());
+            System.out.println("Color: " + datos1.getColor());
+            System.out.println("Kilometraje: " + datos1.getKilometraje());
+            System.out.println("Año de Fabricación: " + datos1.getAnio_fabricacion());
+        }if(op_registro >= 2) {
+            System.out.println("--------------------------");
+            System.out.println("| Datos del 2do vehiculo |");
+            System.out.println("--------------------------");
+            System.out.println("Marca: " + datos2.getMarca());
+            System.out.println("Modelo: " + datos2.getModelo());
+            System.out.println("Placa: " + datos2.getPlaca());
+            System.out.println("Color: " + datos2.getColor());
+            System.out.println("Kilometraje: " + datos2.getKilometraje());
+            System.out.println("Año de Fabricación: " + datos2.getAnio_fabricacion());
+        }if(op_registro >= 3) {
+            System.out.println("--------------------------");
+            System.out.println("| Datos del 3er vehiculo |");
+            System.out.println("--------------------------");
+            System.out.println("Marca: " + datos3.getMarca());
+            System.out.println("Modelo: " + datos3.getModelo());
+            System.out.println("Placa: " + datos3.getPlaca());
+            System.out.println("Color: " + datos3.getColor());
+            System.out.println("Kilometraje: " + datos3.getKilometraje());
+            System.out.println("Año de Fabricación: " + datos3.getAnio_fabricacion());
+        }if(op_registro >= 4) {
+            System.out.println("--------------------------");
+            System.out.println("| Datos del 4to vehiculo |");
+            System.out.println("--------------------------");
+            System.out.println("Marca: " + datos4.getMarca());
+            System.out.println("Modelo: " + datos4.getModelo());
+            System.out.println("Placa: " + datos4.getPlaca());
+            System.out.println("Color: " + datos4.getColor());
+            System.out.println("Kilometraje: " + datos4.getKilometraje());
+            System.out.println("Año de Fabricación: " + datos4.getAnio_fabricacion());
+        }if(op_registro >= 5) {
+            System.out.println("--------------------------");
+            System.out.println("| Datos del 5to vehiculo |");
+            System.out.println("--------------------------");
+            System.out.println("Marca: " + datos5.getMarca());
+            System.out.println("Modelo: " + datos5.getModelo());
+            System.out.println("Placa: " + datos5.getPlaca());
+            System.out.println("Color: " + datos5.getColor());
+            System.out.println("Kilometraje: " + datos5.getKilometraje());
+            System.out.println("Año de Fabricación: " + datos5.getAnio_fabricacion());
+        }
     }
+
+    //SETTER AND GETTER
 
     public String getMarca() {
         return marca;
