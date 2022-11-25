@@ -21,4 +21,5 @@ PRÁCTICA EN EJECUCIÓN (EJEMPLO 2)
 ![registro](https://user-images.githubusercontent.com/117755180/204025728-6dbdbf10-6470-49a1-8171-fad03e56bf1d.png)
 ![datos1](https://user-images.githubusercontent.com/117755180/204025848-a8e8a4db-dc20-4e6c-b861-de4f19868a6f.png)
 ![error menu](https://user-images.githubusercontent.com/117755180/204025857-4f09df96-6c45-4f4d-b71c-ccc2410d3ea4.png)
+![salir](https://user-images.githubusercontent.com/117755180/204026241-60f64bb0-b50e-4a40-8c7c-783575797721.png)
 
